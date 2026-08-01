@@ -18,13 +18,13 @@ or WSL during development.
 ## Building the image locally (Docker Desktop)
 
 ```sh
-docker image build --tag registry.gatomek.pl/projects/ansible .
+docker image build --tag registry.invalid/projects/ansible .
 ```
 
 ## Building the image on Tower
 
 ```sh
-docker --context docker-on-tower image build --add-host tower=192.168.18.238 --tag registry.gatomek.pl/projects/ansible .
+docker --context docker-on-tower image build --add-host tower=192.168.18.238 --tag registry.invalid/projects/ansible .
 ```
 
 ## Backlog
@@ -33,6 +33,6 @@ docker --context docker-on-tower image build --add-host tower=192.168.18.238 --t
 
 ## Remarks
 
-* registry `registry.gatomek.pl/projects/` does not exist
-* image name `registry.gatomek.pl/projects/ansible` is a security name against accidentally pushing image to remote
+* registry `registry.invalid/projects/` does not exist
+* image name `registry.invalid/projects/ansible` is a security name against accidentally pushing image to remote
   registry
